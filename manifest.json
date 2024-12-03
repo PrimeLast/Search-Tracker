@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Search Tracker Extension",
+  "version": "0.01",
+  "description": "Track and display recent search queries with dynamic effects in Side Panel",
+  "action": {
+      
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+     "sidePanel",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "host_permissions": [
+    "http://*/*", "https://*/*"
+  ]
+}
